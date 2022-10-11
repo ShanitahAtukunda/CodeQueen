@@ -1,0 +1,161 @@
+*{
+
+    margin: 0;
+    padding:0;
+    font-family:sans-serif;
+}
+body{
+   background: rgb(218, 201, 210);
+}
+.narvab{
+    margin: 30px;
+    display: flex;
+    align-items: center;
+
+}
+nav{
+    background:rgb(90,33,79);
+}
+.slides{
+    margin-left: 600px;
+    margin-top: -250px;
+}
+.slides img{
+    width: 40%;
+    height: 300px;
+}
+ul{
+    flex: 1;
+    text-align:right;
+}
+ul li{
+    display: inline-block;
+    list-style: none;
+    margin:25px;
+
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(218, 201, 210);
+    padding: 0 ;
+    font-size: 20px;
+    position: relative;
+    font-weight: bolder; 
+}
+ul li ::after{
+    content: "";
+    width: 0;
+    height: 10px;
+    background: rgb(218, 201, 210);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:-20px;
+    transition: 0.5s;
+}
+ul li a:hover::after{
+    width: 100%;
+}
+cite{
+    color: rgb(90, 33, 79);
+    position: relative;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
+.right-column img{
+ width: 500px;
+ height: 500px; 
+ display: inline-flex;
+
+}
+.bout{
+    border-radius:5px;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+.search-box{
+text-align: right;
+position: relative;
+top: -280px;
+padding: 10px;
+}
+.search-box input{
+    width: 30%;
+    height: 25px;
+    font-size: 15px;    
+    background: url(search.png) no-repeat right;
+    border-radius: 5px;
+    
+}
+.left-column h1{
+    font-size: 100px;
+     font-family: lucida;
+    position: relative;
+
+}
+.left-column h3{
+    font-size: 35px;
+    position: relative;
+}
+
+span{
+    color: rgb(116, 9, 59);
+    font-family: lucida;
+
+} 
+em{
+    position: center;
+    font-size: 30px;
+    font-family: lucida caligraphy;
+}
+.left-column p{
+    font-size: 18px;
+    color: rgb(53, 52, 52);
+    margin: 50px 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.btn{
+    text-align: center;
+}
+.btn button{
+    padding: 7px 30px;
+    margin-left: 20px;
+    outline: none;
+    border:1px solid rgb(117, 10, 76);
+    border-radius: 20px;
+    cursor: pointer;
+    color: rgba(32, 3, 26, 0.37);
+    background: transparent;
+    
+}
+.btn .primary-btn{
+    background: linear-gradient( rgb(82, 23, 50), violet);
+    color:white;
+}
+.btn{
+    margin-bottom: 50px;
+    width: 500PX;
+    margin: auto;
+}
+.social-icons{
+    width:"200px";
+    text-align: center;
+    opacity: 4;
+}
+.social-icons img{
+    height: 40px;
+    margin: 14px;
+    cursor: pointer;
+
+}
+footer{
+    background: rgb(90, 33, 79);
+}
+@media (min-width:900px) {
+    nav{
+        align-items: left;
+    }
+}

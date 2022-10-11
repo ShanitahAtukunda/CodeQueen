@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Online Happy Bags</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="Bags.css">
+    </head>
+    <body>
+        <nav>     
+            <ul>
+                <li> <a href="Bags.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+            </nav> 
+        <div class="narvab">
+            <img src="images/5.png">
+            
+                    </div>
+                    <p><cite>Walk With Confidence</cite></p>
+        <div class="slides">           
+                <img class="myslides" src="images/7.jpg">
+                <img class="myslides" src="Images/8.jpg">
+                <img class="myslides" src="images/9.jpg">
+                <img class="myslides" src="Images/10.jpg">
+            <script>
+                var myIndex=0;
+                carousel();
+                function carousel(){
+                    var i;
+                    var x =
+                    document.getElementsByClassName("myslides");
+                    for (i=0; i<x.length; i++){
+                        x[i].style.display="none";  }
+                    myIndex++;
+                    if( myIndex > x.length) { myIndex=1}
+                    x[myIndex-1].style.display="block";
+                setTimeout(carousel,3000);
+                }               
+            </script>
+        </div>
+            
+         <div class ="left-column">
+                 <div class="search-box">
+                      <input type="text" placeholder="">                 
+             </div>
+            
+            <div class="bout">
+
+                <h1> HAPPY<span>BAGS</span></h1>
+                <h3><span>Walk with </span>Confidence</h3>
+                <p>The use of bags predates recorded history, with the earliest bags being no more than lengths of animal skin, cotton, or woven plant fibers,<br>
+                     folded up at the edges and secured in that shape with strings of the same material.</p>
+                <p><span><em>The kind of bag you want is what we have</em></span></p>
+            </div>
+                <div class="btn">
+                    <button type= "button" class="primary-btn" onclick=" document.getElementById('learn').style.display='block'">Learn more </button>       
+                    <p id="learn" style="display:none"> we are here to serve you</p>
+                </div>
+                <br>
+                <br>
+                <footer>
+                <div class="social-icons">
+                    <a href="https://twitter.com/ShanitahAsasira"><img src="images/tt.png"> </a>
+                    <a href="#"><img src="Images/github.PNG"> </a>
+                    <a href="https://www.instagram.com/"><img src="images/ins.png"> </a>                           
+                </div>
+                </footer>
+        </div>
+        </div>
+    </body>
+</html>
