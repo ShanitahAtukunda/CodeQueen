@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    background-color: rgb(200, 223, 243);
+}
+div{
+    margin: 100px;
+    box-shadow: 10px 5px #e4ebed;
+    align-items: center;
+}
+#hello{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+a{
+    text-decoration: none;
+}
+.board{
+    margin:40px,20px,40px ;
+    background-color: deepskyblue;
+    padding: 10px;
+
+}
